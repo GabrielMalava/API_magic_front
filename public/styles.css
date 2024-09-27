@@ -1,0 +1,18 @@
+.card-container {
+    display: flex; /* Usar flexbox para alinhamento */
+    flex-wrap: wrap; /* Permite que as cartas se movam para a linha seguinte */
+    gap: 10px; /* Espaçamento entre as cartas */
+}
+
+.card-item {
+    border: 1px solid #ccc; /* Borda para a carta */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    width: calc(20% - 10px); /* Define a largura para 20% do contêiner, menos o espaço do gap */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.card-image {
+    max-width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner da carta */
+    height: auto; /* Mantém a proporção da imagem */
+}
